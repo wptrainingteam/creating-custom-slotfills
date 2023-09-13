@@ -1,0 +1,8 @@
+{
+	"plugins": [ "./plugins/main", "./plugins/extender" ],
+	"config": {
+		"WP_DEBUG": true,
+		"WP_DEBUG_DISPLAY": true,
+		"SCRIPT_DEBUG": true
+	}
+}

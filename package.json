@@ -1,0 +1,13 @@
+{
+	"name": "creating-custom-slotfills",
+	"version": "0.1.0",
+	"description": "Example block scaffolded with Create Block tool.",
+	"author": "Ryan Welcher",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "pnpm -r build",
+		"start": "pnpm -r start"
+	},
+	"prettier": "@wordpress/prettier-config"
+}
