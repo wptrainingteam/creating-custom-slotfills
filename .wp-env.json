@@ -1,5 +1,10 @@
 {
-	"plugins": [ "./plugins/main", "./plugins/extender" ],
+	"plugins": [
+		"./plugins/main",
+		"./plugins/extender",
+		"https://downloads.wordpress.org/plugin/advanced-query-loop.zip",
+		"./plugins/aql-extension"
+	],
 	"config": {
 		"WP_DEBUG": true,
 		"WP_DEBUG_DISPLAY": true,
