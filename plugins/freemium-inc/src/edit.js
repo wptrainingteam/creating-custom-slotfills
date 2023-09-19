@@ -9,7 +9,7 @@ import { PanelBody } from '@wordpress/components';
  * Internal dependencies
  */
 import './editor.scss';
-import CustomSlotFill from './slotfills';
+import PremiumFeatures from './slotfills';
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -24,10 +24,10 @@ export default function Edit( props ) {
 		<>
 			<InspectorControls>
 				<PanelBody
-					title={ __( 'Main Plugin Settings', 'developer-blog' ) }
+					title={ __( 'Freemium Inc. Settings', 'developer-blog' ) }
 				>
 					<p>Inspector Controls</p>
-					<CustomSlotFill.Slot fillProps={ { ...props } } />
+					<PremiumFeatures.Slot fillProps={ { ...props } } />
 				</PanelBody>
 			</InspectorControls>
 			<p { ...useBlockProps() }>

@@ -1,12 +1,12 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "developer-blog/main",
+	"name": "developer-blog/freemium-inc",
 	"version": "0.1.0",
-	"title": "Main",
+	"title": "Freemium Inc",
 	"category": "widgets",
-	"icon": "smiley",
-	"description": "This block exposes some Slots.",
+	"icon": "money-alt",
+	"description": "This block has premium features that can be enabled with $$$$",
 	"example": {},
 	"supports": {
 		"html": false
@@ -15,6 +15,5 @@
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
-	"render": "file:./render.php",
-	"viewScript": "file:./view.js"
+	"render": "file:./render.php"
 }

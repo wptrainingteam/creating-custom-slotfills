@@ -6,11 +6,11 @@ import { createSlotFill } from '@wordpress/components';
 /**
  * Create our Slot and Fill components
  */
-const { Fill, Slot } = createSlotFill( 'AQLCommon' );
+const { Fill, Slot } = createSlotFill( 'PremiumFeatures' );
 
-const CustomSlotFill = ( { children } ) => <Fill>{ children }</Fill>;
+const PremiumFeatures = ( { children } ) => <Fill>{ children }</Fill>;
 
-CustomSlotFill.Slot = ( { fillProps } ) => (
+PremiumFeatures.Slot = ( { fillProps } ) => (
 	<Slot fillProps={ fillProps }>
 		{ ( fills ) => {
 			return fills.length ? fills : null;
@@ -18,4 +18,4 @@ CustomSlotFill.Slot = ( { fillProps } ) => (
 	</Slot>
 );
 
-export default CustomSlotFill;
+export default PremiumFeatures;

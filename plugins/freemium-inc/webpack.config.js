@@ -7,8 +7,8 @@ const { getWebpackEntryPoints } = require( '@wordpress/scripts/utils/config' );
 // Add any a new entry point by extending the webpack config.
 module.exports = {
 	...defaultConfig,
-	output: {
-		...defaultConfig.output,
-		library: [ 'developerBlog' ],
+	entry: {
+		...getWebpackEntryPoints(),
+		premium: './premium/index.js',
 	},
 };

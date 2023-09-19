@@ -1,7 +1,6 @@
 {
 	"plugins": [
-		"./plugins/main",
-		"./plugins/extender",
+		"./plugins/freemium-inc",
 		"https://downloads.wordpress.org/plugin/advanced-query-loop.zip",
 		"./plugins/aql-extension"
 	],
