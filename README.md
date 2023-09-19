@@ -11,7 +11,7 @@ This repo is a monorepo multipackage because it contains several packages (plugi
 [PNPM](https://pnpm.io/installation) - This monorepo utilizes PNPM to manage project dependencies and run various scripts involved in building and testing projects. You can easily install it with `npm i -g pnpm`.
 
 Quick Start Guide
-After cloning this repo and entering into this projects's folder (cd gutenberg-examples-2023), do the following from the root of the project:
+After cloning this repo and entering into this projects's folder (`cd creating-custom-slotfills`), do the following from the root of the project:
 
 ```bash
 # Set your Node version to the right one for this project (as defined on .nvmrc)
@@ -24,10 +24,8 @@ pnpm run start
 
 At this point you are now ready to begin developing and testing the examples.
 
-To see the examples in action you have several options:
+This repository uses `wp-env` and provides a `.wp-env.json` configuration file to make set up quick and easy.
 
--   Run `npx @wp-now/wp-now start` from any plugin folder to use [`wp-now`](https://github.com/WordPress/playground-tools/tree/trunk/packages/wp-now) to quickly launch a WordPress installation with that specific plugin installed.
--   Use your own WordPress installation to install the plugin (as `.zip`) with the example you're interested in.
-    -   Run `pnpm run plugin-zip` from the root of the project to get the zip version of each plugin at `<plugin-folder>/@gutenberg-examples/<plugin-folder>.zip`.
--   Copy the plugins folders for the examples you're interested in under the `plugins` folder of your own WordPress installation.
--   Use `wp-env` as explained in [Development > WordPress Local Development Environment](DEVELOPMENT.md##wordpress-local-development-environment)
+Install `wp-env` globally with `npm -g i @wordpress/env` and once installed, run `wp-env start` from the project root to start a local development environment with preinstalled plugins.
+
+For more information on the `@wordpress/env/` package refer to the [official documentation](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/)
