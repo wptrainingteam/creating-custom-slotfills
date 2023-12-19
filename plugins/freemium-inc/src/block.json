@@ -11,6 +11,15 @@
 	"supports": {
 		"html": false
 	},
+	"attributes": {
+		"makeItFaster": {
+			"type": "boolean"
+		},
+		"tenXMode": {
+			"type": "boolean",
+			"default": false
+		}
+	},
 	"textdomain": "main",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",

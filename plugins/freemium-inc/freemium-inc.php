@@ -32,7 +32,7 @@ add_action( 'init', 'developer_blog_freemium_inc_block_init' );
  */
 function maybe_add_premium_features() {
 
-	// This can be any number of ways.
+	// This can be done any number of ways.
 	$user_has_upgraded = true;
 
 	$premium_assets_file = plugin_dir_path( __FILE__ ) . 'build/premium.asset.php';
@@ -44,15 +44,6 @@ function maybe_add_premium_features() {
 			$assets['dependencies'],
 			$assets['version'],
 			true
-		);
-
-		// This is hack, ignore it.
-		\wp_localize_script(
-			'freemium-inc-premium',
-			'FREEMIUM',
-			array(
-				'pluginAssetPath' => plugin_dir_url( __FILE__ ),
-			)
 		);
 	}
 }

@@ -3,7 +3,7 @@
  */
 import { __ } from '@wordpress/i18n';
 import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
-import { PanelBody } from '@wordpress/components';
+import { PanelBody, CheckboxControl } from '@wordpress/components';
 
 /**
  * Internal dependencies
@@ -20,18 +20,31 @@ import PremiumFeatures from './slotfills';
  * @return {WPElement} Element to render.
  */
 export default function Edit( props ) {
+	const {
+		attributes: { makeItFaster },
+		setAttributes,
+	} = props;
 	return (
 		<>
 			<InspectorControls>
 				<PanelBody
 					title={ __( 'Freemium Inc. Settings', 'developer-blog' ) }
 				>
-					<p>Inspector Controls</p>
+					<CheckboxControl
+						checked={ makeItFaster }
+						label={ __(
+							'Make my site a little faster',
+							'developer-blog'
+						) }
+						onChange={ () =>
+							setAttributes( { makeItFaster: ! makeItFaster } )
+						}
+					/>
 					<PremiumFeatures.Slot fillProps={ { ...props } } />
 				</PanelBody>
 			</InspectorControls>
 			<p { ...useBlockProps() }>
-				{ __( 'Main – hello from the editor!', 'developer-blog' ) }
+				{ __( 'Freemium INC Example', 'developer-blog' ) }
 			</p>
 		</>
 	);
