@@ -25,12 +25,12 @@
 	'enqueue_block_editor_assets',
 	function () {
 		// Variations.
-		$variations_assets_file = plugin_dir_path( __FILE__ ) . 'build/plugin.asset.php';
+		$variations_assets_file = plugin_dir_path( __FILE__ ) . 'build/slotfills.asset.php';
 		if ( file_exists( $variations_assets_file ) ) {
 			$assets = include $variations_assets_file;
 			\wp_enqueue_script(
 				'aql-extension',
-				plugin_dir_url( __FILE__ ) . 'build/plugin.js',
+				plugin_dir_url( __FILE__ ) . 'build/slotfills.js',
 				$assets['dependencies'],
 				$assets['version'],
 				true
