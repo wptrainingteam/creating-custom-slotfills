@@ -33,7 +33,7 @@ add_action( 'init', 'developer_blog_freemium_inc_block_init' );
 function maybe_add_premium_features() {
 
 	// This can be done any number of ways.
-	$user_has_upgraded = true;
+	$user_has_upgraded = false;
 
 	$premium_assets_file = plugin_dir_path( __FILE__ ) . 'build/premium.asset.php';
 	if ( $user_has_upgraded && file_exists( $premium_assets_file ) ) {
